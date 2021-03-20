@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { services } from '../utils/constants'
+//import { services } from '../utils/constants'
 
 const Services = () => {
-  return <h4>services </h4>
+  return <Wrapper>Services</Wrapper>
 }
 
 const Wrapper = styled.section`

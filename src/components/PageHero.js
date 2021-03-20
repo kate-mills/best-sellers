@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 const PageHero = () => {
-  return <h4>page hero</h4>
+  return <Wrapper>Page Hero</Wrapper>
 }
 
 const Wrapper = styled.section`

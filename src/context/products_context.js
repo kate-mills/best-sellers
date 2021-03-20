@@ -1,5 +1,10 @@
-import axios from 'axios'
-import React, { useContext, useEffect, useReducer } from 'react'
+//
+import React from 'react'
+
+//import axios from 'axios'
+//import React, { useContext, useEffect, useReducer } from 'react'
+
+/*
 import reducer from '../reducers/products_reducer'
 import { products_url as url } from '../utils/constants'
 import {
@@ -14,6 +19,8 @@ import {
 } from '../actions'
 
 const initialState = {}
+*/
+
 
 const ProductsContext = React.createContext()
 
@@ -26,5 +33,5 @@ export const ProductsProvider = ({ children }) => {
 }
 // make sure use
 export const useProductsContext = () => {
-  return useContext(ProductsContext)
+  return React.useContext(ProductsContext)
 }

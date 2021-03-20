@@ -1,4 +1,5 @@
-import React, { useEffect, useContext, useReducer } from 'react'
+import React from 'react'
+/*import React, { useEffect, useContext, useReducer } from 'react'
 import reducer from '../reducers/filter_reducer'
 import {
   LOAD_PRODUCTS,
@@ -11,6 +12,7 @@ import {
   CLEAR_FILTERS,
 } from '../actions'
 import { useProductsContext } from './products_context'
+*/
 
 const initialState = {}
 
@@ -25,5 +27,5 @@ export const FilterProvider = ({ children }) => {
 }
 // make sure use
 export const useFilterContext = () => {
-  return useContext(FilterContext)
+  return React.useContext(FilterContext)
 }

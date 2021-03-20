@@ -1,13 +1,17 @@
 import React from 'react'
-import { FaShoppingCart, FaUserMinus, FaUserPlus } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+//import { FaShoppingCart, FaUserMinus, FaUserPlus } from 'react-icons/fa'
+//import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { useProductsContext } from '../context/products_context'
-import { useCartContext } from '../context/cart_context'
-import { useUserContext } from '../context/user_context'
+//import { useProductsContext } from '../context/products_context'
+//import { useCartContext } from '../context/cart_context'
+//import { useUserContext } from '../context/user_context'
 
 const CartButtons = () => {
-  return <h4>cart buttons </h4>
+  return(
+    <Wrapper>
+      cart buttons
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`

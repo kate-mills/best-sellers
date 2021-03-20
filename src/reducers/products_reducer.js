@@ -1,3 +1,4 @@
+/*
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
@@ -15,3 +16,4 @@ const products_reducer = (state, action) => {
 }
 
 export default products_reducer
+*/

@@ -1,13 +1,13 @@
 import React from 'react'
-import { useProductsContext } from '../context/products_context'
-import { Link } from 'react-router-dom'
+//import { useProductsContext } from '../context/products_context'
+//import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Error from './Error'
-import Loading from './Loading'
-import Product from './Product'
+//import Error from './Error'
+//import Loading from './Loading'
+//import Product from './Product'
 
 const FeaturedProducts = () => {
-  return <h4>featured products</h4>
+  return <Wrapper>featured products</Wrapper>
 }
 
 const Wrapper = styled.section`

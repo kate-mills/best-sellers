@@ -1,11 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useCartContext } from '../context/cart_context'
-import { Link } from 'react-router-dom'
-import { CartContent, PageHero } from '../components'
+//import { useCartContext } from '../context/cart_context'
+//import { Link } from 'react-router-dom'
+//import { CartContent, PageHero } from '../components'
 
 const CartPage = () => {
-  return <h4>cart page</h4>
+  return (
+    <Wrapper>
+      <h4>cart page</h4>
+    </Wrapper>
+  )
+
 }
 
 const Wrapper = styled.main`

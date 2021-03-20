@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Product from './Product'
+//import Product from './Product'
 
 const GridView = () => {
-  return <h4>Grid View</h4>
+  return <Wrapper>gridview</Wrapper>
+
 }
 
 const Wrapper = styled.section`

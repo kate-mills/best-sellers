@@ -1,8 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 const ErrorPage = () => {
-  return <h4>error page</h4>
+  return (
+    <Wrapper>
+      <h4>error page</h4>
+    </Wrapper>
+  )
+
 }
 
 const Wrapper = styled.main`
