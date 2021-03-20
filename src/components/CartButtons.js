@@ -1,6 +1,7 @@
 import React from 'react'
-//import { FaShoppingCart, FaUserMinus, FaUserPlus } from 'react-icons/fa'
-//import { Link } from 'react-router-dom'
+import { FaShoppingCart, FaUserPlus} from 'react-icons/fa'
+//import { FaShoppingCart, FaUserPlus, FaUserMinus} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 //import { useProductsContext } from '../context/products_context'
 //import { useCartContext } from '../context/cart_context'
@@ -8,8 +9,21 @@ import styled from 'styled-components'
 
 const CartButtons = () => {
   return(
-    <Wrapper>
-      cart buttons
+    <Wrapper className="cart-btn-wrapper">
+
+      {/* Shopping Cart*/}
+      <Link to="/cart" className='cart-btn'>Cart
+        <span className="cart-container">
+          <FaShoppingCart/>
+          <span className='cart-value'>12</span>
+        </span>
+      </Link>
+
+      {/* Login/Logout */}
+      <button type="button" className="auth-btn">
+        Login<FaUserPlus/>
+      </button>
+
     </Wrapper>
   )
 }
@@ -21,10 +35,9 @@ const Wrapper = styled.div`
   width: 225px;
 
   .cart-btn {
-    color: var(--clr-grey-1);
+    color: var(--clr-black);
     font-size: 1.5rem;
     letter-spacing: var(--spacing);
-    color: var(--clr-grey-1);
     display: flex;
 
     align-items: center;
@@ -60,7 +73,7 @@ const Wrapper = styled.div`
     border-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--clr-grey-1);
+    color: var(--clr-black);
     letter-spacing: var(--spacing);
     svg {
       margin-left: 5px;
