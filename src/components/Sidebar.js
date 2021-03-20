@@ -1,15 +1,40 @@
 import React from 'react'
-//import logo from '../assets/logo.svg'
-//import { Link } from 'react-router-dom'
+import logo from '../assets/best-sellers.png'
+import { Link } from 'react-router-dom'
 //import { useProductsContext } from '../context/products_context'
-//import { FaTimes } from 'react-icons/fa'
-//import { links } from '../utils/constants'
+import { FaTimes } from 'react-icons/fa'
+import { links } from '../utils/constants'
 import styled from 'styled-components'
-//import CartButtons from './CartButtons'
+import CartButtons from './CartButtons'
 //import { useUserContext } from '../context/user_context'
 
 const Sidebar = () => {
-  return <SidebarContainer>Sidebar</SidebarContainer>
+  const isOpen = false;
+  return(
+    <SidebarContainer>
+      <aside className={`${isOpen?'sidebar show-sidebar':'sidebar'}`}>
+        <div className="sidebar-header">
+          <Link to='/'><img src={logo} className="logo" alt="skincare webstore logo"/></Link>
+          <button type="button" className="close-btn"><FaTimes/></button>
+        </div>{/* CLOSE SIDEBR-HEADER */}
+
+        <ul className="links">
+          {/* START MAP */}
+            { links.map(({id, text, url}) =>{
+              return<li key={id}>
+                  <Link to={url}>{text}</Link>
+                </li>}) }
+          {/* END MAP */}
+
+          {/* START EXTRA li */}
+          <li><Link to='/checkout'>checkout</Link></li>
+          {/* END EXTRA li */}
+        </ul>
+
+        <CartButtons/>
+      </aside>
+    </SidebarContainer>
+  )
 }
 
 const SidebarContainer = styled.div`
@@ -27,7 +52,7 @@ const SidebarContainer = styled.div`
     color: var(--clr-primary-5);
     transition: var(--transition);
     cursor: pointer;
-    color: var(--clr-red-dark);
+    color: var(--clr-primary-5);
     margin-top: 0.2rem;
   }
   .close-btn:hover {
